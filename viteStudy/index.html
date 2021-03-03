@@ -131,7 +131,21 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+    <ul>
+      <li>
+        <router-link to="/">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/foo">Foo</router-link>
+      </li>
+      <li>
+        <router-link to="/bar">Bar</router-link>
+      </li>
+    </ul>
+    <router-view></router-view>
+  </div>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 
